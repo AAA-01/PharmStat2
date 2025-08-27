@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+matplotlib
+scipy==1.15.3
+openpyxl
+sixsigmaspc
+seaborn
+requests
+xlsxwriter

@@ -28,6 +28,7 @@ page = st.sidebar.radio(
         t["stability_regression"]["stability_regression"],
         t["temp_humidity_analysis"]["temp_humidity"],
         t["pqr_module"]["title"],
+        "Статистический анализ",
         t["anova_module"]["title"],
         #"Get data",
         #"Test",
@@ -48,7 +49,10 @@ elif page == t["descriptive_statistics"]["descriptive_stats"]:
 
 elif page == t["histogram_analysis"]["histograms"]:
     from AppPages import histogram_analysis
-    histogram_analysis.show(language)
+
+elif page == "Статистический анализ":
+    from AppPages import statistical_analysis
+    statistical_analysis.show(language)
 
 elif page == t["boxplot_charts"]["boxplot"]:
     from AppPages import BoxPlot
